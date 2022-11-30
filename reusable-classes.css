@@ -1,0 +1,59 @@
+:root {
+    --primary-pink-color: #EBC5C5;
+    --secondary-pink-color: #CF8484;
+    --secondary-light-color: #FFFFFF;
+    --secondary-beige-color: #F2F0EA;
+    --secondary-brown-color: #63564D;
+    --secondary-brown-color-warm: #4E2F1A;
+    --grey-brown: #68615C;
+    --dark-text-color: #493F38;
+}
+
+* , *:before , *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {text-decoration: none;}
+
+
+/*flex classes*/
+.flex {display: flex;}
+.column { flex-direction: column;}
+.align-items-center {align-items: center;}
+.justify-content-center { justify-content: center;}
+.justify-space-around { justify-content: space-around;}
+.justify-space-evenly { justify-content: space-evenly;}
+.justify-content-between { justify-content: space-between;}
+
+/*margin padding*/
+.m0 { margin: 0;}
+.m1 { margin: 1rem;}
+.p0 { padding:0}
+.p1 { padding:1rem;}
+
+/*border-ratius standard*/
+.rounded-1 { border-radius: 1rem;}
+.rounded-2 {border-radius: 2rem;} 
+.circle { border-radius: 50%;}
+
+/*border-standard*/
+.border {
+    border-style: solid;
+}
+
+.b2 {border: 2px;}
+.b3 {border: 3px;}
+.b4 {border: 4px;}
+
+/* font-family: 'Gluten', cursive;
+font-family: 'Gochi Hand', cursive;*/
+
+
+.gnochi {
+    font-family: 'Gochi Hand', cursive;
+}
+.gluten {
+    font-family: 'Gluten', cursive;
+
+}

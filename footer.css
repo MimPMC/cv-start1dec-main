@@ -1,0 +1,61 @@
+footer {
+    text-align: center;
+    height: 32rem;
+    width: 100%;
+    background-color: #68615C;
+    justify-content: space-between;
+}
+.footer-bot {
+    height: 3rem;
+    width: 100%;
+    background-color: #493F38;
+}
+.footer-bot-text {
+    font-family: 'Gluten', cursive;
+    color: #ffffff;
+}
+
+
+.footer-main {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-logo {
+    display: none;
+}
+
+.footer-main-box {
+
+}
+
+.footer-h3 {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer-p {
+    font-family: 'Gluten', cursive;
+    color: #ffffff;
+}
+
+
+@media (min-width:823px) { 
+    footer {
+        text-align: start;
+        height: 15rem;
+
+        justify-content: space-between;
+    }
+    .footer-main {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

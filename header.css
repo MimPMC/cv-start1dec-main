@@ -1,0 +1,124 @@
+
+header {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 4.6rem;
+    width: 100%;
+    background-color: var(--primary-pink-color);
+}
+
+.header-nav {
+    display: none;
+
+
+}
+.menu-btn {
+    visibility: visible;
+}
+.desktop-logo {
+    display: none;
+}
+
+
+.nav-item {
+    padding: .8rem;
+    width: 10rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.4rem;
+    color: #342418;
+    transition: 300ms ease-in-out;
+}
+
+.nav-item:hover {
+    background-color: #63564D;
+    color: #ffffff;
+    border-style: solid;
+    border:3px;
+    border-color: #402A1B;
+}
+
+
+.cat-logo-mobile {
+    height: 3.8rem;
+    margin-right: .5rem;
+}
+
+aside {
+    padding: 1;
+    overflow: hidden;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    z-index: 1000;
+    width: 0rem;
+    height: 100vh;
+    background-color: #D2A4A4;
+    position: fixed;
+    top:4.6rem;
+    transition: width 500ms ease-in-out;
+}
+
+.aside-open {
+    padding: 0;
+    width: 13rem;
+}
+
+
+.aside-navigation {
+    list-style: none;
+    
+}
+
+.aside-item {
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #342418;
+    transition: 300ms ease-in-out;
+}
+.aside-item-span { color: #342418;}
+
+
+@media (min-width:823px) {
+    header {
+        height: 8rem;
+        position: fixed;
+        justify-content: space-between;
+    }
+    .header-nav {
+        width:60em;
+        min-width: 40em;
+        justify-content: center;
+        display: flex;
+
+    }
+    .header-ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menu-btn {
+        display: none;
+    }
+    .cat-logo-mobile {opacity: 0; width: 6rem}
+    .desktop-logo {
+        margin-right: 1rem;
+        margin-left: .5rem;
+        display: block;
+        height: 7rem;
+    }
+
+
+
+}
+
+/* FRÅGA 1: HUR GÖR JAG SÅ ATT TEXTFÄRGEN+border FÖLJER MED PÅ HOVER EFFEKTEN?*/ 
+/* FRÅGA 2: BÄTTRE LÖSNING PÅ CENTRERAD NAV BAR UTAN OSYNLIG KATT PÅ HÖGER?*/
+/* FRÅGA 3 : HUR FÅR JAG MENYN ATT STÄNGAS AUTOMATISKT VID MEDIA QUERY SÅ DEN INTE SYNS PÅ DATORN NÄR STORLEK ÄNDRAS */
