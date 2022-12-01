@@ -1,5 +1,5 @@
 main {
-    height: 100vh;
+    height: 60rem;
     position: relative;
     background-image: url(./images/dot.jpg);
     background-repeat: repeat;
@@ -9,12 +9,10 @@ main {
 
 .main-area {
     z-index: 0.2;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    overflow: hidden;
+    padding: 0.5rem;
     align-content: center;
-    height: calc(100vh - 4em);
+    height: 50rem;
     background-color: #F2F0EA;
     position: relative;
     top: 4.6rem;
@@ -86,23 +84,23 @@ main {
 
 @media (min-width:823px) { 
     main {
-        height: 100vh;
+        overflow: hidden;
+        height: 60rem;
         display: flex;
         justify-content: center;
         align-content: center;
     }
 
     .main-area {
-        bottom:10vh;
         padding: 2rem;
-        height: 70vh;
+        height: 40rem;
         min-width: 823px;
         width: 1024px;
         background-color: #F2F0EA;
         border:3px solid #CF8484;
         border-radius: 1rem;
         position: relative;
-        top: 23%;
+        top: 22%;
     }
 
     .info-container {

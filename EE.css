@@ -4,6 +4,7 @@
     background: url(./mims-128-sprite.png)
     0px 0px;
     position: fixed;
+    display: none;
 }
 
 
@@ -11,6 +12,7 @@
 .game-board {
     display: grid;
     width: 100%;
+    
     grid-template-rows:  1fr;
     grid-template-columns:  1fr  ;
 }
@@ -25,10 +27,21 @@
     height: 70%;
 
 }
+.desktop-only-p {
+  display: none;
+}
 
 
 
   @media (min-width:823px) {
+
+    .desktop-only-p {
+      display: block;
+    }
+    #sprite-image {
+      display: block;
+
+  }
     
 .game-board {
     display: grid;
@@ -46,7 +59,8 @@
   }
 
 .EE-img {
-    height: 70%;
+    width: 50%;
+    height: auto;
 
   }
 
