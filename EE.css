@@ -1,0 +1,59 @@
+#sprite-image {
+    height: 128px;
+    width: 128px;
+    background: url(./mims-128-sprite.png)
+    0px 0px;
+    position: fixed;
+}
+
+
+
+.game-board {
+    display: grid;
+    width: 100%;
+    grid-template-rows:  1fr;
+    grid-template-columns:  1fr  ;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    color: #AAA;
+  }
+
+.EE-img {
+    height: 70%;
+
+}
+
+
+
+  @media (min-width:823px) {
+    
+.game-board {
+    display: grid;
+    height: 80%;
+    width: 100%;
+    grid-template-rows:  50% 50% ;
+    grid-template-columns:  50% 50% ;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+  }
+
+.EE-img {
+    height: 70%;
+
+  }
+
+
+
+
+
+
+
+}

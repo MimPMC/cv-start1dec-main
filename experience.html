@@ -8,24 +8,26 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200;300&family=Gochi+Hand&display=swap');
     </style>
-    <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="./reusable-classes.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="./EE.css">
     <link rel="stylesheet" href="./menu-toggle.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./footer.css">
     <script src="./main.js"></script>
+    <script defer src="./education-game.js"></script>
 </head>
 <body class="flex column">
     <header class="flex align-items-center">
-        <img  class="desktop-logo" src="./images/logo-desktop.png" alt="">  
+        <img class="desktop-logo" src="./images/logo-desktop.png" alt="">  
         <div class="menu-btn" id="menu-btn">
             <div class="menu-btn-burger"></div>
         </div> 
         <nav class="header-nav">
             <ul class=" header-ul aside-navigation flex p0">
                 <li class="nav-item">
-                    <a class="aside-link" href="index.html">
+                    <a class="aside-link" href="./index.html">
                         <span  class="aside-item-span">ABOUT ME</span>
                     </a>
                 </li>
@@ -40,7 +42,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="aside-link" href="#">
+                    <a class="aside-link" href="portfolio.html">
                         <span  class="aside-item-span">PORTFOLIO</span>
                     </a>
                 </li>
@@ -51,7 +53,7 @@
     <aside class="p0">
         <ul class="aside-navigation flex column p0 align-items-center">
             <li class="aside-item">
-                <a class="aside-link" href="index.html">
+                <a class="aside-link" href="./index.html">
                     <span  class="aside-item-span">ABOUT ME</span>
                 </a>
             </li>
@@ -66,7 +68,7 @@
                 </a>
             </li>
             <li class="aside-item">
-                <a class="aside-link" href="#">
+                <a class="aside-link" href="portfolio.html">
                     <span  class="aside-item-span">PORTFOLIO</span>
                 </a>
             </li>
@@ -74,37 +76,20 @@
     </aside>
     <main>
         <div class="main-area">
-                <div class="portfolio-header flex justify-content-center">
-                <h2 class=" gnochi portfolio-h2">Portfolio</h2>
+            <div class="portfolio-header flex justify-content-center">
+                <h2 class=" gnochi portfolio-h2">EXPERIENCE</h2>
                 </div>
-
-                <div class="portpolio-container">
-                    <div class="portfolio-section flex" id="Projects">
-                        <h3 class="gluten portfolio-section-name">Websites</h3>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic"></div>
-                        <button class="about-btn">Play slideshow</button>
-                    </div>
-                    <div class="portfolio-section flex" id="Projects">
-                        <h3 class="gluten portfolio-section-name">Paintings</h3>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic"></div>
-                        <button class="about-btn">Play slideshow</button>
-                    </div>
-                    <div class="portfolio-section flex" id="Projects">
-                        <h3 class="gluten portfolio-section-name">Games</h3>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic"></div>
-                        <button class="about-btn">Play slideshow</button>
-                    </div>
-
+            <div id="sprite-container">
+                <div id="sprite-image">
                 </div>
-
-            </div>
-
+            </div> 
+            <div class="game-board">
+                <div class="box"><img class="EE-img"src="./EE/Group 16.png" alt=""></div>
+                <div class="box"><img class="EE-img"src="./EE/Group 12.png" alt=""></div>
+                <div class="box"><img class="EE-img"src="./EE/Group 20.png" alt=""></div>
+                <div class="box"><img class="EE-img"src="./EE/Group 14.png" alt=""></div>
+                
+            </div>  
         </div>
 
     </main>
