@@ -1,0 +1,11 @@
+.slideshow img {
+    position: absolute;
+    width: 10rem;
+    height: auto;
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  
+  .slideshow img.visible {
+    opacity: 1;
+  }

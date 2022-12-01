@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,101 +10,104 @@
         @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@200;300&family=Gochi+Hand&display=swap');
     </style>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="./slideshow.css">
     <link rel="stylesheet" href="./reusable-classes.css">
     <link rel="stylesheet" href="./menu-toggle.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./footer.css">
     <script src="./main.js"></script>
+    <script src="./portfolio-slides.js"></script>
 </head>
+
 <body class="flex column">
     <header class="flex align-items-center">
-        <img  class="desktop-logo" src="./images/logo-desktop.png" alt="">  
+        <img class="desktop-logo" src="./images/logo-desktop.png" alt="">
         <div class="menu-btn" id="menu-btn">
             <div class="menu-btn-burger"></div>
-        </div> 
+        </div>
         <nav class="header-nav">
             <ul class=" header-ul aside-navigation flex p0">
                 <li class="nav-item">
                     <a class="aside-link" href="index.html">
-                        <span  class="aside-item-span">ABOUT ME</span>
+                        <span class="aside-item-span">ABOUT ME</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="aside-link" href="./education-mini-me.html">
-                        <span  class="aside-item-span">EDUCATION</span>
+                        <span class="aside-item-span">EDUCATION</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="aside-link" href="./experience.html">
-                        <span  class="aside-item-span">EXPERIENCE</span>
+                        <span class="aside-item-span">EXPERIENCE</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="aside-link" href="#">
-                        <span  class="aside-item-span">PORTFOLIO</span>
+                        <span class="aside-item-span">PORTFOLIO</span>
                     </a>
                 </li>
             </ul>
         </nav>
-        <img class="cat-logo-mobile"src="./images/logo-mobile.png" alt="">
+        <img class="cat-logo-mobile" src="./images/logo-mobile.png" alt="">
     </header>
     <aside class="p0">
         <ul class="aside-navigation flex column p0 align-items-center">
             <li class="aside-item">
                 <a class="aside-link" href="index.html">
-                    <span  class="aside-item-span">ABOUT ME</span>
+                    <span class="aside-item-span">ABOUT ME</span>
                 </a>
             </li>
             <li class="aside-item">
                 <a class="aside-link" href="./education-mini-me.html">
-                    <span  class="aside-item-span">EDUCATION</span>
+                    <span class="aside-item-span">EDUCATION</span>
                 </a>
             </li>
             <li class="aside-item">
                 <a class="aside-link" href="./experience.html">
-                    <span  class="aside-item-span">EXPERIENCE</span>
+                    <span class="aside-item-span">EXPERIENCE</span>
                 </a>
             </li>
             <li class="aside-item">
                 <a class="aside-link" href="#">
-                    <span  class="aside-item-span">PORTFOLIO</span>
+                    <span class="aside-item-span">PORTFOLIO</span>
                 </a>
             </li>
         </ul>
     </aside>
     <main>
         <div class="main-area">
-                <div class="portfolio-header flex justify-content-center">
+            <div class="portfolio-header flex justify-content-center">
                 <h2 class=" gnochi portfolio-h2">Portfolio</h2>
+            </div>
+            <div class="portpolio-container">
+                <div class="portfolio-section flex" id="Projects">
+                    <h3 class="gluten portfolio-section-name">Websites</h3>
+                    <div class="portfolio-pic pp1"></div>
+                    <div class="portfolio-pic pp1"></div>
+                    <div class="portfolio-pic"></div>
+
+
+                    <button class="about-btn websites-slideshow">Play slideshow</button>
                 </div>
-
-                <div class="portpolio-container">
-                    <div class="portfolio-section flex" id="Projects">
-                        <h3 class="gluten portfolio-section-name">Websites</h3>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic"></div>
-                        <button class="about-btn">Play slideshow</button>
-                    </div>
-                    <div class="portfolio-section flex" id="Projects">
-                        <h3 class="gluten portfolio-section-name">Paintings</h3>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic"></div>
-                        <button class="about-btn">Play slideshow</button>
-                    </div>
-                    <div class="portfolio-section flex" id="Projects">
-                        <h3 class="gluten portfolio-section-name">Games</h3>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic pp1"></div>
-                        <div class="portfolio-pic"></div>
-                        <button class="about-btn">Play slideshow</button>
-                    </div>
-
+                <div class="portfolio-section flex" id="Projects">
+                    <h3 class="gluten portfolio-section-name">Paintings</h3>
+                    <div class="portfolio-pic pp1"></div>
+                    <div class="portfolio-pic pp1"></div>
+                    <div class="portfolio-pic"></div>
+                    <button class="about-btn paintings-slideshow">Play slideshow</button>
+                </div>
+                <div class="portfolio-section flex" id="Projects">
+                    <h3 class="gluten portfolio-section-name">Games</h3>
+                    <div class="portfolio-pic pp1"></div>
+                    <div class="portfolio-pic pp1"></div>
+                    <div class="portfolio-pic"></div>
+                    <button class="about-btn">Play slideshow</button>
                 </div>
 
             </div>
+        </div>
 
         </div>
 
@@ -122,15 +126,16 @@
                 <p class="footer-p">sweden</p>
             </div>
             <div class="footer-main-box flex column">
-                <h3 class="footer-h3" >SOCIAL MEDIA</h3>
+                <h3 class="footer-h3">SOCIAL MEDIA</h3>
                 <p class="footer-p">phone:222222222222</p>
                 <p class="footer-p">phone:222222222222</p>
             </div>
         </div>
         <div class="footer-bot flex align-items-center justify-content-center">
-            <p class="footer-bot-text">copyright  2022 ©  |   Mimmi Collin</p>
+            <p class="footer-bot-text">copyright 2022 © | Mimmi Collin</p>
         </div>
 
     </footer>
 </body>
+
 </html>
