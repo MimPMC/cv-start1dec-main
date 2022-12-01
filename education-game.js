@@ -1,4 +1,4 @@
-/* window.addEventListener('keydown', handleKeyDown);
+ window.addEventListener('keydown', handleKeyDown);
 
 
 let positionX = 0;
@@ -58,7 +58,7 @@ function handleKeyDown(event){
         
     }   
 }
-*/
+
 
 //play sprite animation
 window.addEventListener('DOMContentLoaded', main)
