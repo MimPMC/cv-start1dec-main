@@ -42,7 +42,8 @@ main {
 }
 
 .main-pic {
-    height: 50%;
+    height: 30%;
+
 }
 
 .info-title-container {
@@ -64,6 +65,7 @@ main {
 
 .info-about-me-p {
     width: 60%;
+    text-align: center;
     padding-right: 5px;
     font-size: .9rem;
     font-family: 'Gluten', cursive;
@@ -80,8 +82,15 @@ main {
     font-family: 'Gluten', cursive;
     color: white;
     border-style: none;
+    cursor: pointer;
 }
 
+.contact-img {
+
+    width: 20rem;
+    margin-left: 0%;
+    top: 0%;
+}
 @media (min-width:823px) { 
     main {
         overflow: hidden;
@@ -122,6 +131,7 @@ main {
         flex-direction: row;
         justify-content: space-between;
     }
+    
     .main-pic {
         height: 100%;
     }

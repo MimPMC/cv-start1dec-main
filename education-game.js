@@ -1,10 +1,11 @@
  window.addEventListener('keydown', handleKeyDown);
 
+ let positionX = 10;
+ let positionY = 10;
 
-let positionX = 0;
-let positionY = 0;
 
 function handleKeyDown(event){
+
 
 
     const mimmiRunSprite = document.querySelector('#sprite-image')

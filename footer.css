@@ -27,9 +27,6 @@ footer {
     display: none;
 }
 
-.footer-main-box {
-
-}
 
 .footer-h3 {
     font-family: 'Gochi Hand', cursive;
@@ -42,7 +39,10 @@ footer {
     font-family: 'Gluten', cursive;
     color: #ffffff;
 }
-
+.sm-icons {
+    color: #ffffff;
+    font-size: 2.2rem;
+}
 
 @media (min-width:823px) { 
     footer {
