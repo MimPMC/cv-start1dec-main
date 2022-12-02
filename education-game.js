@@ -80,7 +80,7 @@ function playAnimation() {
 
   animationInterval = setInterval(() => {
     spriteSheet.style.backgroundPosition = `-${position}px 0px`;
-
+    
     if (position < widthOfSpriteSheet) {
       position = position + diff;
     } else {

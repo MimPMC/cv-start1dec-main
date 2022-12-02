@@ -33,7 +33,6 @@
   #sprite-image {
     display: block;
   }
-
   .game-board {
     display: grid;
     height: 80%;
